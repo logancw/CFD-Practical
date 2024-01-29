@@ -50,9 +50,13 @@ public class App {
         }
 
         double elitePercent = (double)elite / totalScores;
-        System.out.println(" Elite Bowlers %" +  (float) elitePercent * 100);
+        elitePercent = elitePercent * 100;
+        elitePercent = ((int) elitePercent)/100.0;
+        System.out.println(" Elite Bowlers %" + elitePercent * 100);
 
         double averagePercent = (double)average / totalScores;
+        averagePercent = averagePercent * 100;
+        averagePercent = ((int) averagePercent)/100.0;
         System.out.println(" Average Bowlers %" + (float) averagePercent * 100);
 
 
